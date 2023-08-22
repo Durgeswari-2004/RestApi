@@ -18,8 +18,8 @@ public class ApiController {
 	ApiService aser;
 	
 	@PostMapping("addEmp")
-	public Employee add(@RequestBody Employee am) {
-		return aser.saveinfo(am);
+	public Employee add(@RequestBody Employee employee) {
+		return aser.saveinfo(employee);
 	}
 	
 	@GetMapping("showemp")

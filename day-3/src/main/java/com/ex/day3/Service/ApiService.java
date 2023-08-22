@@ -12,13 +12,13 @@ import com.ex.day3.Repositories.EmployeeRepo;
 public class ApiService {
 	
 	@Autowired
-	EmployeeRepo ar;
+	EmployeeRepo emprepo;
 	
-	public Employee saveinfo(Employee am) {
-		return ar.save(am);
+	public Employee saveinfo(Employee employee) {
+		return emprepo.save(employee);
 	}
 	
 	public List<Employee> showinfo(){
-		return ar.findAll();
+		return emprepo.findAll();
 	}
 }
